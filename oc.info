@@ -1,0 +1,22 @@
+name = oc
+description = 2nd Attempt Open Charity
+package = Core
+version = VERSION
+core = 7.x
+stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/styles.css
+
+; CORE REGIONS - REQUIRED
+regions[page_top] 	    = Page top
+regions[page_bottom]    = Page bottom
+regions[content]        = Content
+
+; CUSTOM REGIONS
+regions[header] = Header
+regions[jumbotron] = Jumbotron
+regions[involve] = Involve
+regions[mission] = Mission
+regions[members] = Members
+regions[blog_footer] = Blog Footer
+regions[footer] = Footer

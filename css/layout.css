@@ -1,0 +1,97 @@
+/* LAYOUT STYLES ONLY */
+
+/* Box-sizing everything */
+*, *:before, *:after {
+  /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+  -webkit-box-sizing: border-box; 
+
+  /* Firefox (desktop or Android) 28- */
+  -moz-box-sizing: border-box;
+
+  /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body, .page-wrapper {    
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+.page-wrapper{
+	flex: auto;
+    position: relative;	
+}
+
+.header { 
+	padding-top: 1.25rem;
+    padding-bottom: .875rem;
+}
+
+.header-content{
+	min-width:1110px;
+	margin: 0 auto;
+}
+
+.main-menu {
+	float: right;
+}
+
+
+/* Padding to left space in block demostration */
+.jumbotron,
+.involve,
+.mission,
+.members,
+.blog_footer,
+.footer {
+    padding-bottom: .9375rem;
+    padding-top: 1.8125rem;
+}
+
+/* Sticky footer using flexbox */
+/* https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+.footer {
+	flex: none;
+}
+
+
+.content {
+	max-width:1110px;
+	margin-left:auto;
+	margin-right:auto
+}
+
+
+.views-row {
+    float:left;
+    /* margin:0 5px 5px */
+}
+
+
+/* Standard Breakpoints */
+
+/* @media all and (max-width: 1690px) { ...} */
+@media all and (min-width: 1280px) { 
+	/* .header .content , .content{ */
+        /* max-width:1110px; */
+		/* margin-left:auto; */
+		/* margin-right:auto */
+    /* } */
+}
+@media all and (max-width: 980px) { ... }
+@media all and (max-width: 736px) { ... }
+@media all and (max-width: 480px) { ... }
+
+
+
+
+
+
